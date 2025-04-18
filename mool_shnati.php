@@ -161,26 +161,31 @@ session_start();
 				<div class="col-lg-9 col-md-8 col-sm-12 col-12">
 					<div class="ast_blog_box">
 						<div class="ast_blog_img">
-							<img src="images/content/satya.png" alt="Blog" title="Blog">
+							<img src="images/content/mool.png" alt="Blog" title="Blog">
 						</div>
 						<div class="ast_blog_info">
-							<h3 class="ast_blog_info_heading">सत्यनारायण पूजा का महत्व (Importance of Satyanarayan Puja)
-							</h3>
-							<p class="ast_blog_info_details">Satyanarayan Puja is a revered ritual dedicated to Lord
-								Vishnu,
-								observed to express gratitude and seek blessings for success, peace, and well-being.
-								It is usually performed on special occasions such as housewarmings, marriages, or during
-								full moon days (Purnima).</p>
-							<p class="ast_blog_info_details">The puja involves storytelling (Katha), offerings, and
-								devotional hymns,
-								which help devotees cultivate faith and devotion. It is believed that performing this
-								puja
-								with a pure heart removes obstacles, fulfills wishes, and brings divine grace into one’s
-								life.
-								Our learned priests conduct the ritual as per Vedic traditions to ensure maximum
-								spiritual benefit.</p>
+							<h3 class="ast_blog_info_heading">Significance of Mool Shanti Pujan in Hindu Tradition</h3>
+							<p class="ast_blog_info_details">
+								Mool Shanti Pujan is a vital Vedic ritual performed to pacify the negative effects of
+								being born under the Mool Nakshatra. It is believed that certain birth stars can carry
+								karmic baggage affecting the individual or their family. To nullify these effects and
+								ensure a harmonious life, this puja is conducted under expert guidance.
+							</p>
+							<p class="ast_blog_info_details">
+								The ritual includes specific homams, chanting of Nakshatra mantras, and offerings to
+								planetary deities. It brings peace, improves well-being, and protects the native from
+								future obstacles. Our trained priests perform this puja with utmost devotion and
+								adherence to ancient scriptures.
+							</p>
+							<p class="ast_blog_info_details" style="font-family: 'Mangal', sans-serif;">
+								मूल शांति पूजा उन जातकों के लिए की जाती है जिनका जन्म मूल नक्षत्र में हुआ होता है। यह
+								पूजा जन्म नक्षत्र के दोषों को दूर कर जीवन में सुख-शांति, स्वास्थ्य और समृद्धि प्रदान
+								करती है। पूजा में विशेष मंत्रों और हवन का आयोजन किया जाता है जिससे नकारात्मक प्रभाव
+								समाप्त होते हैं।
+							</p>
 						</div>
 					</div>
+
 
 					<div class="ast_blog_comment_wrapper">
 						<h4 class="ast_blog_heading">all comments</h4>
@@ -213,26 +218,34 @@ session_start();
 						</ul>
 
 
+
 					</div>
 					<div class="ast_blog_message_wrapper">
 						<h4 class="ast_blog_heading">Leave a reply</h4>
 						<div class="ast_blog_messages">
-							<form>
+							<form action="submit_comment.php" method="POST">
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-										<textarea rows="5" placeholder="Your Message"></textarea>
+										<textarea name="message" rows="5" placeholder="Your Message"
+											required></textarea>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-										<input type="text" placeholder="Name*">
+										<input type="text" name="name" placeholder="Name*" required>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-										<input type="email" placeholder="Email*">
+										<input type="email" name="email" placeholder="Email*" required>
 									</div>
+
+									<!-- 🔁 This part is now dynamic -->
+									<input type="hidden" name="page"
+										value="<?php echo htmlspecialchars(basename($_SERVER['PHP_SELF'])); ?>">
+
 									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-										<a href="#" id="ed_submit" class="ast_btn">reply</a>
+										<button type="submit" class="ast_btn">Reply</button>
 									</div>
 								</div>
 							</form>
+
 						</div>
 					</div>
 				</div>
@@ -245,13 +258,6 @@ session_start();
 		</div>
 	</div>
 	<!--Blog section end-->
-	<!-- Download wrapper start-->
-	<div class="ast_download_wrapper ast_toppadder70 ast_bottompadder70">
-		<div class="container">
-
-		</div>
-	</div>
-	<!-- Download wrapper End-->
 
 	<!-- Footer wrapper start-->
 	<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
@@ -338,7 +344,6 @@ session_start();
 					</div>
 				</div>
 
-				<!-- New Payment Widget Column -->
 				<!-- New Payment Widget Column -->
 				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
 					<div class="widget text-widget">

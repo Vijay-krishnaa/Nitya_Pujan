@@ -177,7 +177,7 @@ session_start();
 					<h4>Rudravishek Puja</h4>
 					<p>Celebration of Lord Ganesha's birth, invoking wisdom and wealth.</p>
 					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+					<a href="rudra.php" class="ast_btn">read more</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -186,7 +186,7 @@ session_start();
 					<h4>Satyanarayan Puja</h4>
 					<p>Performed for happiness, success, and well-being of the family.</p>
 					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+					<a href="satyanarayan.php" class="ast_btn">read more</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -204,7 +204,7 @@ session_start();
 					<h4>Mool Shanti Puja</h4>
 					<p>A ritual offering reverence and gratitude to one's spiritual teacher.</p>
 					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+					<a href="mool_shnati.php" class="ast_btn">read more</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -213,7 +213,7 @@ session_start();
 					<h4>Mahamirtunjay Puja</h4>
 					<p>A grand celebration of Goddess Durga’s power and victory over evil.</p>
 					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+					<a href="maha_mirtunjay.php" class="ast_btn">read more</a>
 				</div>
 			</div>
 		</div>
