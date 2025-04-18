@@ -183,7 +183,7 @@ session_start();
 					<div class="ast_contact_info">
 						<span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
 						<h4>address</h4>
-						<p>House No:-22, Vishnu path Bhatiya basti Kadma, Jamsedpur 831005</p>
+						<p>House No:-22, Vishnu path Bhatiya basti Kadma, Jamshedpur 831005</p>
 					</div>
 				</div>
 			</div>
@@ -316,7 +316,7 @@ session_start();
 						<div class="ast_gettouch">
 							<ul>
 								<li><i class="fa fa-home" aria-hidden="true"></i>
-									<p>House No - 22, Vishnu Path<br> Bhatiya Basti, Kadma, Jamsedpur, 831005</p>
+									<p>House No - 22, Vishnu Path<br> Bhatiya Basti, Kadma, Jamshedpur, 831005</p>
 								</li>
 								<li><i class="fa fa-at" aria-hidden="true"></i> <a
 										href="#">barunpnd6@gmail.com</a><br><a href="#">info@website.com</a></li>

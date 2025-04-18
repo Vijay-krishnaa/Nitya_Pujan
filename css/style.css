@@ -2608,6 +2608,7 @@ p {
 }
 .ast_blog_messages textarea{
     padding: 10px 15px;
+    border-radius: 12px;
     height: auto;
 }
 .ast_blog_messages input:focus, .ast_blog_messages textarea:focus{

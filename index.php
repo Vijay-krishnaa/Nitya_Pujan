@@ -290,7 +290,7 @@ session_start();
 						<div class="ast_whywe_info_box">
 							<span><img  src="images/content/geo.svg" alt=""></span>
 							<div class="ast_whywe_info_box_info">
-								<p>🌐 Instant Access Jamsedpur</p>
+								<p>🌐 Instant Access Jamshedpur</p>
 							</div>
 						</div>
 					</div>
@@ -711,7 +711,7 @@ session_start();
 						<div class="ast_counter">
 							<span><img src="images/content/timer_1.png" alt="timer"></span>
 							<h2 class="timer" data-from="0" data-to="1" data-speed="2000"></h2>
-							<h4>Offices Jamsedpur</h4>
+							<h4>Offices Jamshedpur</h4>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -1025,7 +1025,7 @@ session_start();
 						<div class="ast_gettouch">
 							<ul>
 								<li><i class="fa fa-home" aria-hidden="true"></i>
-									<p>House No - 22, Vishnu Path<br> Bhatiya Basti, Kadma, Jamsedpur, 831005</p>
+									<p>House No - 22, Vishnu Path<br> Bhatiya Basti, Kadma, Jamshedpur, 831005</p>
 								</li>
 								<li><i class="fa fa-at" aria-hidden="true"></i> <a
 										href="#">barunpnd6@gmail.com</a><br><a href="#"></a></li>
