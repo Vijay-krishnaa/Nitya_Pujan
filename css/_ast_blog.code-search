@@ -1,0 +1,180 @@
+# Query: \n.ast_blog
+# ContextLines: 1
+
+37 results - 1 file
+
+css\style.css:
+  2282  /*--------Breadcrumb End-----------*/
+  2283: /*---------- Blog css start -------*/
+  2284: .ast_blog_wrapper{
+  2285  	float:left;
+
+  2287  	background-color:#ffffff;
+  2288: }
+  2289: .ast_blog_wrapper.ast_blog_wrapper01 {
+  2290      padding: 80px 0px 10px;
+  2291: }
+  2292: .ast_blog_box{
+  2293  	float:left;
+
+  2295  	margin-bottom:30px;
+  2296: }
+  2297: .ast_blog_img img {
+  2298      border-radius: 19px;
+
+  2300      width: 100%;
+  2301: }	
+  2302: .ast_blog_info{
+  2303      float: left;
+
+  2307      position: relative;
+  2308: }
+  2309: .ast_blog_info ul.ast_blog_info_text{
+  2310      width: 100%;
+
+  2316      background-color: rgba(0, 0, 0, 0.3);
+  2317: }
+  2318: .ast_blog_info ul.ast_blog_info_text li{
+  2319  	list-style:none;
+
+  2322  	margin-right:15px;
+  2323: }
+  2324: .ast_blog_info ul.ast_blog_info_text li a{
+  2325      font-size: 13px;
+
+  2332      transition: all 0.5s;
+  2333: }
+  2334: .ast_blog_info ul.ast_blog_info_text li a:hover{
+  2335  	color: #ff6f00;
+
+  2340      transition: all 0.5s;
+  2341: }
+  2342: .ast_blog_info ul.ast_blog_info_text li a i{
+  2343  	color: #ff6f00;
+  2344  	margin-right:5px;
+  2345: }
+  2346: .ast_blog_info .ast_blog_info_heading{
+  2347  	float: left;
+
+  2350      margin-top: 10px;
+  2351: }
+  2352: .ast_blog_info .ast_blog_info_heading a{
+  2353      color: #333333;
+
+  2358      transition: all 0.5s;	
+  2359: }
+  2360: .ast_blog_info .ast_blog_info_heading a:hover{
+  2361  	color: #ff6f00;
+
+  2366      transition: all 0.5s;
+  2367: }
+  2368: .ast_blog_info .ast_blog_info_details{
+  2369  	float:left;
+  2370  	width:100%;
+  2371: }
+  2372: .ast_blog_info .ast_btn{
+  2373  	margin-top:10px;
+  2374: }
+  2375: .ast_blog_img{
+  2376  	float:left;
+
+  2383      transition: all 0.5s;
+  2384: }
+  2385: .ast_blog_img a:after{
+  2386  	content:"";
+
+  2398      transition: all 0.5s;
+  2399: }
+  2400: .ast_blog_box:hover .ast_blog_img a:after{
+  2401  	opacity:1;
+
+  2406      transition: all 0.5s;
+  2407: }
+  2408: .ast_blog_img img{
+  2409  	display:inline-block;
+
+  2414      transition: all 0.5s;
+  2415: }
+  2416: .ast_blog_img .ast_date_tag{
+  2417  	position: absolute;
+
+  2434      transition: all 0.5s; 
+  2435: }
+  2436: .ast_blog_box:hover .ast_date_tag{
+  2437  	 top: -15px;
+
+  2446  /*---------- Blog css end -------*/
+  2447: /*---------- Blog Single css start -------*/
+  2448: .ast_blog_comment_wrapper{
+  2449      float: left;
+
+  2454      border-bottom: 1px solid #e1e1e1;
+  2455: }
+  2456: .ast_blog_comment_wrapper .ast_blog_heading{
+  2457  	float:left;
+
+  2462  	padding-bottom:10px;
+  2463: }
+  2464: .ast_blog_comment_wrapper .ast_blog_heading:after {
+  2465      content: "";
+
+  2471      height: 2px;
+  2472: }
+  2473: .ast_blog_comment_wrapper ul{
+  2474  	float:left;
+
+  2477  	padding:0px;
+  2478: }
+  2479: .ast_blog_comment_wrapper ul li{
+  2480  	list-style: none;
+
+  2485      padding-bottom: 15px;
+  2486: }
+  2487: .ast_blog_comment_wrapper ul li:last-child {
+  2488      margin-bottom: 0;
+
+  2490      border-bottom: 0px;
+  2491: }
+  2492: .ast_blog_comment_wrapper ul li ul{
+  2493  	padding-left:40px;
+  2494: }
+  2495: .ast_blog_comment{
+  2496  	float:left;
+
+  2522      width: calc(100% - 110px);
+  2523: }
+  2524: .ast_blog_comment:hover .ast_comment_text h5{
+  2525      color: #ff6f00;
+
+  2568  	margin:5px 0px 10px 0px;
+  2569: }
+  2570: .ast_blog_message_wrapper{
+  2571      float: left;
+
+  2574      margin-top: 30px;
+  2575: }
+  2576: .ast_blog_message_wrapper .ast_blog_heading{
+  2577  	float:left;
+
+  2582  	padding-bottom:10px;
+  2583: }
+  2584: .ast_blog_message_wrapper .ast_blog_heading:after {
+  2585      content: "";
+
+  2591      height: 2px;
+  2592: }
+  2593: .ast_blog_messages{
+  2594  	float:left;
+  2595  	width:100%;
+  2596: }
+  2597: .ast_blog_messages input, .ast_blog_messages textarea{
+  2598      float: left;
+
+  2607  	border: 1px solid #e1e1e1;
+  2608: }
+  2609: .ast_blog_messages textarea{
+  2610      padding: 10px 15px;
+  2611      height: auto;
+  2612: }
+  2613: .ast_blog_messages input:focus, .ast_blog_messages textarea:focus{
+  2614  	outline:none;

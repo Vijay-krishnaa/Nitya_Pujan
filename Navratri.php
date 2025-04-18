@@ -8,7 +8,7 @@ session_start();
 <!-- Begin Head -->
 
 <head>
-<title>NITYA PUJAN</title>
+	<title>NITYA PUJAN</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta name="description" content="Astrology">
@@ -36,7 +36,7 @@ session_start();
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 					<div class="ast_contact_details">
 						<ul>
-						<li><i class="fa fa-phone" aria-hidden="true"></i> +918235903436</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> +918235903436</li>
 							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> barunpnd6@gmail.com</a>
 							</li>
 						</ul>
@@ -54,8 +54,8 @@ session_start();
 											aria-hidden="true"></i> Sign Up</a></li>
 							<?php endif; ?>
 
-						
-	
+
+
 						</ul><!---->
 						<div id="login-dialog" class="zoom-anim-dialog mfp-hide">
 							<h1>Login Form</h1>
@@ -110,17 +110,17 @@ session_start();
 								</li>
 								<li><a href="about.php">about</a></li>
 								<li><a href="services.php">services</a></li>
-								
+
 								<li><a href="appointments.php">appointment</a></li>
 								<li class="as_submenu_li"><a href="#">shop</a>
 									<ul class="submenu">
 										<li><a href="shop.php">shop</a></li>
-										
+										<li><a href="shop_single.php">shop single</a></li>
 										<li><a href="cart.php">cart</a></li>
 										<li><a href="checkout.php">checkout</a></li>
 									</ul>
 								</li>
-							
+
 								<li><a href="contact-us.php">contact</a></li>
 							</ul>
 						</div>
@@ -130,148 +130,139 @@ session_start();
 			</div>
 		</div>
 	</div>
-<!--Breadcrumb end-->
-<!--Services Start-->
-<div class="ast_service_wrapper ast_toppadder70 ast_bottompadder50">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv5.png" alt="Service">
-					<h4>Griha Pravesh(Nutan/Jirnadi)</h4>
-					<p>Puja performed before entering a new home to invite prosperity and peace.</p>
-					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+	<!-- Header End -->
+	<!--Breadcrumb start-->
+	<div class="ast_pagetitle">
+		<div class="ast_img_overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="page_title">
+						<h2>service single</h2>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv6.png" alt="Service">
-					<h4>Navratri Puja(Samanya/Sampurn)</h4>
-					<p>Naming ceremony for a newborn as per astrological traditions.</p>
-					<div class="clearfix"></div>
-					<a href="Navratri.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv4.png" alt="Service">
-					<h4>Marriage Ceremony</h4>
-					<p>Rituals to bless the union of two souls for a prosperous married life.</p>
-					<div class="clearfix"></div>
-					<a href="mirrage.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv3.png" alt="Service">
-					<h4>Navratri Puja</h4>
-					<p>Dedicated worship of Goddess Durga across nine powerful nights.</p>
-					<div class="clearfix"></div>
-					<a href="Navratri.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv2.png" alt="Service">
-					<h4>Rudravishek Puja</h4>
-					<p>Celebration of Lord Ganesha's birth, invoking wisdom and wealth.</p>
-					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv1.png" alt="Service">
-					<h4>Satyanarayan Puja</h4>
-					<p>Performed for happiness, success, and well-being of the family.</p>
-					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv7.png" alt="Service">
-					<h4>Vijayadashami Puja</h4>
-					<p>Marks the triumph of good over evil, performed at Dussehra's end.</p>
-					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv8.png" alt="Service">
-					<h4>Mool Shanti Puja</h4>
-					<p>A ritual offering reverence and gratitude to one's spiritual teacher.</p>
-					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="ast_service_box">
-					<img src="images/content/sv9.png" alt="Service">
-					<h4>Mahamirtunjay Puja</h4>
-					<p>A grand celebration of Goddess Durga’s power and victory over evil.</p>
-					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<ul class="breadcrumb">
+						<li><a href="index.php">home</a></li>
+						<li>//</li>
+						<li><a href="service.html">service</a></li>
+						<li>//</li>
+						<li><a href="service_single.html">service single</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<!--Breadcrumb end-->
+	<!--Blog section start-->
+	<div class="ast_blog_wrapper ast_toppadder80 ast_bottompadder80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-8 col-sm-12 col-12">
+					<div class="ast_blog_box">
+						<div class="ast_blog_img">
+							<img src="images/content/durga.jpg" alt="Blog" title="Blog">
+						</div>
+						<div class="ast_blog_info">
+							<div class="ast_blog_info_section">
+								<h2 class="ast_blog_info_heading">Navratri Puja: Samanya and Sampuran</h2>
+							</div>
 
-<!--Services End-->
-<!--WeDo Start-->
+							<div class="ast_blog_info_section" style="margin-top: 30px;">
+								<h4 class="ast_blog_info_heading">Samanya Puja (सामान्य पूजा)</h4>
+								<p class="ast_blog_info_details">
+									Samanya Navratri Puja is a simplified version of the rituals, ideal for individuals
+									or families observing the puja at home.
+									It includes Kalash Sthapana, daily worship of Goddess Durga in her nine forms,
+									mantra chanting, offering prasad, and performing aarti.
+									This form of puja maintains spiritual essence while being easy to perform.
+								</p>
+							</div>
 
-<!--WeDo End-->
-<!--Timer Section start -->
-<div class="ast_timer_wrapper ast_toppadder70 ast_bottompadder40">
-    <div class="ast_img_overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                <div class="ast_heading">
-                    <h1>now <span>we have</span></h1>
-                    <p>We proudly serve with devotion and expertise, offering trusted spiritual guidance across India.</p>
-                </div>
-            </div>
-            <div class="ast_counter_wrapper row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                    <div class="ast_counter">
-                        <span><img src="images/content/timer_1.png" alt="timer"></span>
-                        <h2 class="timer" data-from="0" data-to="1" data-speed="2000"></h2>
-                        <h4>Office in India</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                    <div class="ast_counter">
-                        <span><img src="images/content/timer_2.png" alt="timer"></span>
-                        <h2 class="timer" data-from="0" data-to="50" data-speed="2000"></h2>
-                        <h4>Skilled Pandits</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                    <div class="ast_counter">
-                        <span><img src="images/content/timer_3.png" alt="timer"></span>
-                        <h2 class="timer" data-from="0" data-to="2" data-speed="2000"></h2>
-                        <h4>Cities Covered</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                    <div class="ast_counter">
-                        <span><img src="images/content/timer_4.png" alt="timer"></span>
-                        <h2 class="timer" data-from="0" data-to="7" data-speed="2000"></h2>
-                        <h4>Years of Experience</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+							<div class="ast_blog_info_section" style="margin-top: 30px;">
+								<h4 class="ast_blog_info_heading">Sampuran Puja (संपूर्ण पूजा)</h4>
+								<p class="ast_blog_info_details">
+									Sampuran Navratri Puja is a complete and elaborate ritual performed by experienced
+									priests.
+									It includes all steps of the Samanya Puja along with Chandi Path, Durga Saptashati
+									recitation, Homam (Havan),
+									Nav Kanya Puja, and special offerings for each form of the Goddess. This puja is
+									ideal for temples or those
+									seeking deep spiritual fulfillment during Navratri.
+								</p>
+							</div>
+						</div>
 
-<!--Timer Section end -->
-<!-- Download wrapper start-->
-<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
+					</div>
+					<div class="ast_blog_comment_wrapper">
+						<h4 class="ast_blog_heading">all comments</h4>
+						<ul>
+							<?php
+							$conn = new mysqli("localhost", "root", "", "nitya_pujan");
+
+							if ($conn->connect_error) {
+								die("Connection failed: " . $conn->connect_error);
+							}
+
+							$result = $conn->query("SELECT * FROM comments ORDER BY created_at DESC");
+
+							while ($row = $result->fetch_assoc()):
+								?>
+								<li>
+									<div class="ast_blog_comment">
+										<div class="ast_comment_image">
+											<img src="images/content/test2.png" alt="img">
+										</div>
+										<div class="ast_comment_text">
+											<h5 class="ast_bloger_name"><?= htmlspecialchars($row['name']) ?></h5>
+											<span
+												class="ast_blog_date"><?= date("F j, Y", strtotime($row['created_at'])) ?></span>
+											<p class="ast_blog_post"><?= nl2br(htmlspecialchars($row['message'])) ?></p>
+										</div>
+									</div>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+
+
+
+					</div>
+					<div class="ast_blog_message_wrapper">
+						<h4 class="ast_blog_heading">Leave a reply</h4>
+						<div class="ast_blog_messages">
+							<form action="submit_comment.php" method="POST">
+								<div class="row">
+									<div class="col-lg-12">
+										<textarea name="message" rows="5" placeholder="Your Message"
+											required></textarea>
+									</div>
+									<div class="col-lg-6">
+										<input type="text" name="name" placeholder="Name*" required>
+									</div>
+									<div class="col-lg-6">
+										<input type="email" name="email" placeholder="Email*" required>
+									</div>
+									<div class="col-lg-12">
+										<button type="submit" class="ast_btn">Reply</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12 col-12">
+					<div class="sidebar_wrapper">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Blog section end-->
+
+	<!-- Footer wrapper start-->
+	<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -356,7 +347,6 @@ session_start();
 				</div>
 
 				<!-- New Payment Widget Column -->
-				<!-- New Payment Widget Column -->
 				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
 					<div class="widget text-widget">
 						<h4 class="widget-title">Payment Info</h4>
@@ -392,15 +382,16 @@ session_start();
 		</div>
 	</div>
 
-<!-- Footer wrapper End-->
-<!--Main js file Style--> 
-<script type="text/javascript" src="js/jquery.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.appear.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<!--Main js file End-->
+	<!-- Footer wrapper End-->
+	<!--Main js file Style-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<!--Main js file End-->
 </body>
+
 </html>

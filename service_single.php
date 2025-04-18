@@ -8,7 +8,7 @@ session_start();
 <!-- Begin Head -->
 
 <head>
-<title>NITYA PUJAN</title>
+	<title>NITYA PUJAN</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta name="description" content="Astrology">
@@ -36,7 +36,7 @@ session_start();
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 					<div class="ast_contact_details">
 						<ul>
-						<li><i class="fa fa-phone" aria-hidden="true"></i> +918235903436</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> +918235903436</li>
 							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> barunpnd6@gmail.com</a>
 							</li>
 						</ul>
@@ -54,8 +54,8 @@ session_start();
 											aria-hidden="true"></i> Sign Up</a></li>
 							<?php endif; ?>
 
-						
-	
+
+
 						</ul><!---->
 						<div id="login-dialog" class="zoom-anim-dialog mfp-hide">
 							<h1>Login Form</h1>
@@ -110,7 +110,7 @@ session_start();
 								</li>
 								<li><a href="about.php">about</a></li>
 								<li><a href="services.php">services</a></li>
-								
+
 								<li><a href="appointments.php">appointment</a></li>
 								<li class="as_submenu_li"><a href="#">shop</a>
 									<ul class="submenu">
@@ -120,7 +120,7 @@ session_start();
 										<li><a href="checkout.php">checkout</a></li>
 									</ul>
 								</li>
-							
+
 								<li><a href="contact-us.php">contact</a></li>
 							</ul>
 						</div>
@@ -130,139 +130,128 @@ session_start();
 			</div>
 		</div>
 	</div>
-<!-- Header End -->     
-<!--Breadcrumb start-->
-<div class="ast_pagetitle">
-<div class="ast_img_overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<div class="page_title">
-					<h2>service single</h2>
-				</div>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<ul class="breadcrumb">
-					<li><a href="index.php">home</a></li>
-					<li>//</li>
-					<li><a href="service.html">service</a></li>
-					<li>//</li>
-					<li><a href="service_single.html">service single</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-<!--Breadcrumb end-->
-<!--Blog section start-->
-<div class="ast_blog_wrapper ast_toppadder80 ast_bottompadder80">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9 col-md-8 col-sm-12 col-12">
-				<div class="ast_blog_box">
-					<div class="ast_blog_img">
-						<img src="images/content/grihapravesh.jpg" alt="Blog" title="Blog">
-					</div>
-					<div class="ast_blog_info">
-    <h3 class="ast_blog_info_heading">Significance of Griha Pravesh Puja in Hindu Tradition</h3>
-    <p class="ast_blog_info_details">Griha Pravesh Puja marks a sacred beginning in a new home, invoking blessings of peace, prosperity, and protection from negative energies. It is an auspicious ceremony performed before entering a new house to purify the space and seek divine grace. Following Vastu Shastra and astrological timing ensures the positive flow of energy within the home.</p>
-    <p class="ast_blog_info_details">This ritual typically includes Ganesh Puja, Navagraha Shanti, and Vastu Puja. It is believed to bring harmony among family members and remove any doshas related to the house. Our expert priests conduct the puja with precision and devotion, ensuring a spiritually uplifting experience as you step into your new abode.</p>
-</div>
-
-				</div>
-				<div class="ast_blog_comment_wrapper">
-					<h4 class="ast_blog_heading">all comments</h4>
-					<ul>
-	<li>
-		<div class="ast_blog_comment">
-			<div class="ast_comment_image">
-				<img src="https://dummyimage.com/70x70" alt="">
-			</div>
-			<div class="ast_comment_text">
-				<h5 class="ast_bloger_name">Pandit Rajesh Sharma</h5>
-				<span class="ast_blog_date">April 5, 2025</span>
-				<p class="ast_blog_post">The Griha Pravesh puja listed here is exactly as per Vedic traditions. A perfect service for those entering a new home with spiritual intent.</p>
-			</div>
-		</div>
-	</li>
-
-	<li>
-		<div class="ast_blog_comment">
-			<div class="ast_comment_image">
-				<img src="https://dummyimage.com/70x70" alt="">
-			</div>
-			<div class="ast_comment_text">
-				<h5 class="ast_bloger_name">Neha Tripathi</h5>
-				<span class="ast_blog_date">April 6, 2025</span>
-				<p class="ast_blog_post">Yes, we had our Griha Pravesh done last month through Nitya Pujan, and it was a truly divine experience. Highly recommend their services.</p>
-			</div>
-		</div>
-	</li>
-
-	<li>
-		<div class="ast_blog_comment">
-			<div class="ast_comment_image">
-				<img src="https://dummyimage.com/70x70" alt="">
-			</div>
-			<div class="ast_comment_text">
-				<h5 class="ast_bloger_name">Ankit Verma</h5>
-				<span class="ast_blog_date">April 7, 2025</span>
-				<p class="ast_blog_post">The detailed rituals for Durga Puja are very helpful. I appreciate how everything is rooted in tradition yet made accessible for us online.</p>
-			</div>
-		</div>
-	</li>
-
-	<li>
-		<div class="ast_blog_comment">
-			<div class="ast_comment_image">
-				<img src="https://dummyimage.com/70x70" alt="">
-			</div>
-			<div class="ast_comment_text">
-				<h5 class="ast_bloger_name">Suman Joshi</h5>
-				<span class="ast_blog_date">April 8, 2025</span>
-				<p class="ast_blog_post">The explanations about each puja and the process really help those unfamiliar with the rituals. Nitya Pujan is doing a great job keeping our traditions alive.</p>
-			</div>
-		</div>
-	</li>
-</ul>
-
-
-
-				</div>
-				<div class="ast_blog_message_wrapper">
-					<h4 class="ast_blog_heading">Leave a reply</h4>
-					<div class="ast_blog_messages">
-						<form>
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-									<textarea rows="5" placeholder="Your Message"></textarea>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-									<input type="text" placeholder="Name*">
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-									<input type="email" placeholder="Email*">
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-									<a href="#" id="ed_submit" class="ast_btn">reply</a>
-								</div>
-							</div>
-						</form>
+	<!-- Header End -->
+	<!--Breadcrumb start-->
+	<div class="ast_pagetitle">
+		<div class="ast_img_overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="page_title">
+						<h2>service single</h2>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-12 col-12">
-				<div class="sidebar_wrapper">
-		
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<ul class="breadcrumb">
+						<li><a href="index.php">home</a></li>
+						<li>//</li>
+						<li><a href="service.html">service</a></li>
+						<li>//</li>
+						<li><a href="service_single.html">service single</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!--Blog section end-->
+	<!--Breadcrumb end-->
+	<!--Blog section start-->
+	<div class="ast_blog_wrapper ast_toppadder80 ast_bottompadder80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-8 col-sm-12 col-12">
+					<div class="ast_blog_box">
+						<div class="ast_blog_img">
+							<img src="images/content/grihapravesh.jpg" alt="Blog" title="Blog">
+						</div>
+						<div class="ast_blog_info">
+							<h3 class="ast_blog_info_heading">Significance of Griha Pravesh Puja in Hindu Tradition</h3>
+							<p class="ast_blog_info_details">Griha Pravesh Puja marks a sacred beginning in a new home,
+								invoking blessings of peace, prosperity, and protection from negative energies. It is an
+								auspicious ceremony performed before entering a new house to purify the space and seek
+								divine grace. Following Vastu Shastra and astrological timing ensures the positive flow
+								of energy within the home.</p>
+							<p class="ast_blog_info_details">This ritual typically includes Ganesh Puja, Navagraha
+								Shanti, and Vastu Puja. It is believed to bring harmony among family members and remove
+								any doshas related to the house. Our expert priests conduct the puja with precision and
+								devotion, ensuring a spiritually uplifting experience as you step into your new abode.
+							</p>
+						</div>
 
-<!-- Footer wrapper start-->
-<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
+					</div>
+					<div class="ast_blog_comment_wrapper">
+						<h4 class="ast_blog_heading">all comments</h4>
+						<ul>
+							<?php
+							$conn = new mysqli("localhost", "root", "", "nitya_pujan");
+
+							if ($conn->connect_error) {
+								die("Connection failed: " . $conn->connect_error);
+							}
+
+							$result = $conn->query("SELECT * FROM comments ORDER BY created_at DESC");
+
+							while ($row = $result->fetch_assoc()):
+								?>
+								<li>
+									<div class="ast_blog_comment">
+										<div class="ast_comment_image">
+											<img src="images/content/test2.png" alt="img">
+										</div>
+										<div class="ast_comment_text">
+											<h5 class="ast_bloger_name"><?= htmlspecialchars($row['name']) ?></h5>
+											<span
+												class="ast_blog_date"><?= date("F j, Y", strtotime($row['created_at'])) ?></span>
+											<p class="ast_blog_post"><?= nl2br(htmlspecialchars($row['message'])) ?></p>
+										</div>
+									</div>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+
+
+
+					</div>
+					<div class="ast_blog_message_wrapper">
+						<h4 class="ast_blog_heading">Leave a reply</h4>
+						<div class="ast_blog_messages">
+							<form action="submit_comment.php" method="POST">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+										<textarea name="message" rows="5" placeholder="Your Message"
+											required></textarea>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+										<input type="text" name="name" placeholder="Name*" required>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+										<input type="email" name="email" placeholder="Email*" required>
+									</div>
+
+									<!-- 🔁 This part is now dynamic -->
+									<input type="hidden" name="page"
+										value="<?php echo htmlspecialchars(basename($_SERVER['PHP_SELF'])); ?>">
+
+									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+										<button type="submit" class="ast_btn">Reply</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12 col-12">
+					<div class="sidebar_wrapper">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Blog section end-->
+
+	<!-- Footer wrapper start-->
+	<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -347,7 +336,6 @@ session_start();
 				</div>
 
 				<!-- New Payment Widget Column -->
-				<!-- New Payment Widget Column -->
 				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
 					<div class="widget text-widget">
 						<h4 class="widget-title">Payment Info</h4>
@@ -383,15 +371,16 @@ session_start();
 		</div>
 	</div>
 
-<!-- Footer wrapper End-->
-<!--Main js file Style--> 
-<script type="text/javascript" src="js/jquery.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.appear.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<!--Main js file End-->
+	<!-- Footer wrapper End-->
+	<!--Main js file Style-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<!--Main js file End-->
 </body>
+
 </html>

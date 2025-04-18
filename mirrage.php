@@ -8,7 +8,7 @@ session_start();
 <!-- Begin Head -->
 
 <head>
-<title>NITYA PUJAN</title>
+	<title>NITYA PUJAN</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta name="description" content="Astrology">
@@ -36,7 +36,7 @@ session_start();
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 					<div class="ast_contact_details">
 						<ul>
-						<li><i class="fa fa-phone" aria-hidden="true"></i> +918235903436</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> +918235903436</li>
 							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> barunpnd6@gmail.com</a>
 							</li>
 						</ul>
@@ -161,85 +161,69 @@ session_start();
 				<div class="col-lg-9 col-md-8 col-sm-12 col-12">
 					<div class="ast_blog_box">
 						<div class="ast_blog_img">
-							<img src="images/content/mirrage.jpg" alt="Blog" title="Blog">
+							<img src="images/content/mir.jpg" alt="Blog" title="Blog">
 						</div>
-						<div class="ast_blog_info">
-							<h3 class="ast_blog_info_heading">Significance of Griha Pravesh Puja in Hindu Tradition</h3>
-							<p class="ast_blog_info_details">Griha Pravesh Puja marks a sacred beginning in a new home,
-								invoking blessings of peace, prosperity, and protection from negative energies. It is an
-								auspicious ceremony performed before entering a new house to purify the space and seek
-								divine grace. Following Vastu Shastra and astrological timing ensures the positive flow
-								of energy within the home.</p>
-							<p class="ast_blog_info_details">This ritual typically includes Ganesh Puja, Navagraha
-								Shanti, and Vastu Puja. It is believed to bring harmony among family members and remove
-								any doshas related to the house. Our expert priests conduct the puja with precision and
-								devotion, ensuring a spiritually uplifting experience as you step into your new abode.
-							</p>
+						<div class="ast_marriage_info" >
+							<div class="ast_marriage_info_section" >
+								<h2 class="ast_marriage_info_heading">Marriage Puja: Rituals and Role of the Pandit</h2>
+							</div>
+
+							<div class="ast_marriage_info_section" style="margin-top: 30px;">
+								<h4 class="ast_marriage_info_heading">Marriage Puja Rituals (विवाह पूजा विधि)</h4>
+								<p class="ast_marriage_info_details">
+									Marriage Puja is a sacred set of rituals that marks the spiritual and cultural union
+									of two souls.
+									The ceremony begins with Ganesh Puja for removing obstacles, followed by Kanyadaan,
+									Mangalsutra Dharan, Havan, and Saptapadi—the seven sacred vows around the fire.
+									Each ritual in the puja carries deep symbolic meaning, ensuring the marriage is
+									blessed with love, harmony, and prosperity.
+								</p>
+							</div>
+
+							<div class="ast_marriage_info_section" style="margin-top: 30px;">
+								<h4 class="ast_marriage_info_heading">Importance of the Pandit (पंडित का महत्व)</h4>
+								<p class="ast_marriage_info_details">
+									The Pandit is the spiritual guide of the Marriage Puja. With expertise in Vedic
+									scriptures and Sanskrit mantras,
+									the Pandit performs every step of the ritual with precision, invoking divine
+									energies and ensuring the sanctity of the occasion.
+									From selecting the auspicious muhurat to conducting the Havan and chanting mantras,
+									the Pandit plays an essential role in transforming the wedding into a divine
+									celebration.
+								</p>
+							</div>
 						</div>
+
 
 					</div>
 					<div class="ast_blog_comment_wrapper">
 						<h4 class="ast_blog_heading">all comments</h4>
 						<ul>
-							<li>
-								<div class="ast_blog_comment">
-									<div class="ast_comment_image">
-										<img src="https://dummyimage.com/70x70" alt="">
-									</div>
-									<div class="ast_comment_text">
-										<h5 class="ast_bloger_name">Pandit Rajesh Sharma</h5>
-										<span class="ast_blog_date">April 5, 2025</span>
-										<p class="ast_blog_post">The Griha Pravesh puja listed here is exactly as per
-											Vedic traditions. A perfect service for those entering a new home with
-											spiritual intent.</p>
-									</div>
-								</div>
-							</li>
+							<?php
+							$conn = new mysqli("localhost", "root", "", "nitya_pujan");
 
-							<li>
-								<div class="ast_blog_comment">
-									<div class="ast_comment_image">
-										<img src="https://dummyimage.com/70x70" alt="">
-									</div>
-									<div class="ast_comment_text">
-										<h5 class="ast_bloger_name">Neha Tripathi</h5>
-										<span class="ast_blog_date">April 6, 2025</span>
-										<p class="ast_blog_post">Yes, we had our Griha Pravesh done last month through
-											Nitya Pujan, and it was a truly divine experience. Highly recommend their
-											services.</p>
-									</div>
-								</div>
-							</li>
+							if ($conn->connect_error) {
+								die("Connection failed: " . $conn->connect_error);
+							}
 
-							<li>
-								<div class="ast_blog_comment">
-									<div class="ast_comment_image">
-										<img src="https://dummyimage.com/70x70" alt="">
-									</div>
-									<div class="ast_comment_text">
-										<h5 class="ast_bloger_name">Ankit Verma</h5>
-										<span class="ast_blog_date">April 7, 2025</span>
-										<p class="ast_blog_post">The detailed rituals for Durga Puja are very helpful. I
-											appreciate how everything is rooted in tradition yet made accessible for us
-											online.</p>
-									</div>
-								</div>
-							</li>
+							$result = $conn->query("SELECT * FROM comments ORDER BY created_at DESC");
 
-							<li>
-								<div class="ast_blog_comment">
-									<div class="ast_comment_image">
-										<img src="https://dummyimage.com/70x70" alt="">
+							while ($row = $result->fetch_assoc()):
+								?>
+								<li>
+									<div class="ast_blog_comment">
+										<div class="ast_comment_image">
+											<img src="images/content/test2.png" alt="img">
+										</div>
+										<div class="ast_comment_text">
+											<h5 class="ast_bloger_name"><?= htmlspecialchars($row['name']) ?></h5>
+											<span
+												class="ast_blog_date"><?= date("F j, Y", strtotime($row['created_at'])) ?></span>
+											<p class="ast_blog_post"><?= nl2br(htmlspecialchars($row['message'])) ?></p>
+										</div>
 									</div>
-									<div class="ast_comment_text">
-										<h5 class="ast_bloger_name">Suman Joshi</h5>
-										<span class="ast_blog_date">April 8, 2025</span>
-										<p class="ast_blog_post">The explanations about each puja and the process really
-											help those unfamiliar with the rituals. Nitya Pujan is doing a great job
-											keeping our traditions alive.</p>
-									</div>
-								</div>
-							</li>
+								</li>
+							<?php endwhile; ?>
 						</ul>
 
 
@@ -248,22 +232,24 @@ session_start();
 					<div class="ast_blog_message_wrapper">
 						<h4 class="ast_blog_heading">Leave a reply</h4>
 						<div class="ast_blog_messages">
-							<form>
+							<form action="submit_comment.php" method="POST">
 								<div class="row">
-									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-										<textarea rows="5" placeholder="Your Message"></textarea>
+									<div class="col-lg-12">
+										<textarea name="message" rows="5" placeholder="Your Message"
+											required></textarea>
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-										<input type="text" placeholder="Name*">
+									<div class="col-lg-6">
+										<input type="text" name="name" placeholder="Name*" required>
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-										<input type="email" placeholder="Email*">
+									<div class="col-lg-6">
+										<input type="email" name="email" placeholder="Email*" required>
 									</div>
-									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-										<a href="#" id="ed_submit" class="ast_btn">reply</a>
+									<div class="col-lg-12">
+										<button type="submit" class="ast_btn">Reply</button>
 									</div>
 								</div>
 							</form>
+
 						</div>
 					</div>
 				</div>
@@ -276,13 +262,6 @@ session_start();
 		</div>
 	</div>
 	<!--Blog section end-->
-	<!-- Download wrapper start-->
-	<div class="ast_download_wrapper ast_toppadder70 ast_bottompadder70">
-		<div class="container">
-
-		</div>
-	</div>
-	<!-- Download wrapper End-->
 
 	<!-- Footer wrapper start-->
 	<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
@@ -290,11 +269,11 @@ session_start();
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 					<div class="ast_footer_info">
-						<img src="https://dummyimage.com/160x64" alt="Logo">
-						<p>It is a long established fact that a reader will be distracted by the readable content of a
-							page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or
-							less normal distribution of letters, as opposed to using 'Content here, content here',
-							making it look like readable English.</p>
+						<p>In today’s busy world, staying connected to our spiritual roots brings peace and balance.
+							Nitya Pujan offers authentic Vedic rituals, daily worship guidance, and personalized Puja
+							services to help you nurture your faith and devotion — all in a simple and accessible way.
+						</p>
+
 						<ul>
 							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
@@ -304,12 +283,14 @@ session_start();
 						</ul>
 					</div>
 				</div>
+
 				<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 					<div class="widget text-widget">
-						<h4 class="widget-title">our newsletter</h4>
+						<h4 class="widget-title">Our Newsletter</h4>
 						<div class="ast_newsletter">
-							<p>Making it look like readable English.The point of using Lorem Ipsum is that it has a
-								more-or less normal distribution of letters.</p>
+							<p>Stay connected with Nitya Pujan for spiritual updates, important tithi reminders,
+								festival-specific rituals, and special offers on Pujas and Jaaps. Receive divine
+								insights directly in your inbox to keep your daily devotion on track.</p>
 							<div class="ast_newsletter_box">
 								<input type="text" placeholder="Email">
 								<button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
@@ -317,60 +298,92 @@ session_start();
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
 					<div class="widget text-widget">
-						<h4 class="widget-title">our services</h4>
+						<h4 class="widget-title">Our Services</h4>
 						<div class="ast_servicelink">
 							<ul>
-								<li><a href="services.php">Griha Pravesh</a></li>
-								<li><a href="services.php">Navratri Pooja</a></li>
-								<li><a href="services.php">Weeding Pooja</a></li>
-								<li><a href="services.php">Bhagwat Katha</a></li>
-								<li><a href="services.php">Puran Katha</a></li>
+								<li><a href="services.php">Griha Pravesh Pooja</a></li>
+								<li><a href="services.php">Namkaran Sanskar</a></li>
+								<li><a href="services.php">Marriage Pooja</a></li>
+								<li><a href="services.php">Satyanarayan Katha</a></li>
+								<li><a href="services.php">Ganesh Chaturthi Pooja</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
 					<div class="widget text-widget">
-						<h4 class="widget-title">quick links</h4>
+						<h4 class="widget-title">Quick Links</h4>
 						<div class="ast_sociallink">
 							<ul>
-								<li><a href="about.php">about</a></li>
-								<li><a href="blog.html">blog</a></li>
+								<li><a href="about.php">About</a></li>
+								<li><a href="blog.html">Blog</a></li>
 								<li><a href="team.html">Astrologers</a></li>
-								<li><a href="error.html">404 error</a></li>
-								<li><a href="contact-us.php">contact</a></li>
+								<li><a href="error.html">404 Error</a></li>
+								<li><a href="contact-us.php">Contact</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+
+				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
 					<div class="widget text-widget">
-						<h4 class="widget-title">get in touch</h4>
+						<h4 class="widget-title">Get in Touch</h4>
 						<div class="ast_gettouch">
 							<ul>
 								<li><i class="fa fa-home" aria-hidden="true"></i>
-									<p>2794, Hayhurst Lane Bloomfield Township, MI 48302</p>
+									<p>House No - 22, Vishnu Path<br> Bhatiya Basti, Kadma, Jamsedpur, 831005</p>
 								</li>
-								<li><i class="fa fa-at" aria-hidden="true"></i> <a href="#">support@website.com</a><a
-										href="#">info@website.com</a></li>
+								<li><i class="fa fa-at" aria-hidden="true"></i> <a
+										href="#">barunpnd6@gmail.com</a><br><a href="#">info@website.com</a></li>
 								<li><i class="fa fa-phone" aria-hidden="true"></i>
-									<p>+1800 326 3264</p>
-									<p>+1800 326 3234</p>
+									<p>+918235903436</p>
+									<p>+917250163436</p>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+
+				<!-- New Payment Widget Column -->
+				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+					<div class="widget text-widget">
+						<h4 class="widget-title">Payment Info</h4>
+						<div class="ast_payment_info">
+
+							<!-- QR Image -->
+							<div class="payment-qr">
+								<img src="images/content/scanner.png" alt="QR Code">
+							</div>
+
+							<!-- Payment Details Styled -->
+							<div class="payment-details"
+								style="color: #fff; background-color: #222; padding: 10px; border-radius: 8px;">
+								<p style="margin: 4px 0;"><strong>Bank:</strong> Canara Bank</p>
+								<p style="margin: 4px 0;"><strong>Account No:</strong> 4909101002221</p>
+								<p style="margin: 4px 0;"><strong>IFSC:</strong> CNRB0004909</p>
+								<p style="margin: 4px 0;"><strong>A/C Holder:</strong> Barun Pandey</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+
 				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 					<div class="ast_copyright_wrapper">
-						<p>&copy; Copyright 2022, All Rights Reserved, <a href="#">astrology</a></p>
+						<p>&copy; Copyright 2025, All Rights Reserved, <a href="#">NITYA PUJAN</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<!-- Footer wrapper End-->
 	<!--Main js file Style-->
 	<script type="text/javascript" src="js/jquery.js"></script>

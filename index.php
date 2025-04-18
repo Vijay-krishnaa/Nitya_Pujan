@@ -915,7 +915,7 @@ session_start();
 
 							<div class="item">
 								<div class="ast_testimonials_slider_box">
-									<img src="images/content/test.png" alt="Testimonial">
+									<img src="images/content/test2.png" alt="Testimonial">
 									<div class="ast_testimonials_slider_box_text">
 										<p>I booked a Griha Pravesh puja through Nitya Pujan. The process was seamless
 											and the energy during the ceremony was divine. Thank you for the blessings.
@@ -938,7 +938,7 @@ session_start();
 
 							<div class="item">
 								<div class="ast_testimonials_slider_box">
-									<img src="images/content/test.png" alt="Testimonial">
+									<img src="images/content/test2.png" alt="Testimonial">
 									<div class="ast_testimonials_slider_box_text">
 										<p>I was guided very well during the online Kundali consultation. The
 											astrologer's predictions and remedies really helped me overcome obstacles.
