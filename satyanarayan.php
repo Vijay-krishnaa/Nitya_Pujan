@@ -147,7 +147,7 @@ session_start();
 						<li>//</li>
 						<li><a href="service.html">service</a></li>
 						<li>//</li>
-						<li><a href="service_single.html">service single</a></li>
+						<li><a href="girha_pravesh.html">service single</a></li>
 					</ul>
 				</div>
 			</div>

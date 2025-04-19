@@ -344,7 +344,7 @@ session_start();
 						<p>A sacred housewarming ceremony that purifies and blesses your new home with positive energy
 							and divine grace.</p>
 						<div class="clearfix"></div>
-						<a href="service_single.php" class="ast_btn">read more</a>
+						<a href="girha_pravesh.php" class="ast_btn">read more</a>
 					</div>
 				</div>
 

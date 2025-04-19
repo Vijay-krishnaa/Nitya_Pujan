@@ -141,7 +141,7 @@ session_start();
 					<h4>Griha Pravesh(Nutan/Jirnadi)</h4>
 					<p>Puja performed before entering a new home to invite prosperity and peace.</p>
 					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+					<a href="girha_pravesh.php" class="ast_btn">read more</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -195,7 +195,7 @@ session_start();
 					<h4>Vijayadashami Puja</h4>
 					<p>Marks the triumph of good over evil, performed at Dussehra's end.</p>
 					<div class="clearfix"></div>
-					<a href="service_single.php" class="ast_btn">read more</a>
+					<a href="girha_pravesh.php" class="ast_btn">read more</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-12">

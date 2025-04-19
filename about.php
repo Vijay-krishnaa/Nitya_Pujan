@@ -447,7 +447,7 @@ session_start();
 									<p>House No - 22, Vishnu Path<br> Bhatiya Basti, Kadma, Jamshedpur, 831005</p>
 								</li>
 								<li><i class="fa fa-at" aria-hidden="true"></i> <a
-										href="#">barunpnd6@gmail.com</a><br><a href="#">info@website.com</a></li>
+										href="#">barunpnd6@gmail.com</a><br><a href="#"></a></li>
 								<li><i class="fa fa-phone" aria-hidden="true"></i>
 									<p>+918235903436</p>
 									<p>+917250163436</p>
