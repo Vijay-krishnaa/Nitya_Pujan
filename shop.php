@@ -133,249 +133,73 @@ session_start();
 
 	<!-- shop section start -->
 	<div class="ast_shop_wrapper ast_toppadder70 ast_bottompadder70">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9 col-md-9 col-sm-12 col-12">
-					<div class="ast_shop_main">
-						<div class="row">
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/NAV.jpg"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">Navgraha Yantra</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+				<div class="ast_shop_main">
+					<div class="row">
+
+						<?php
+						$products = [
+							["name" => "Navgraha Yantra", "price" => 300, "image" => "images/content/NAV.jpg"],
+							["name" => "Rudraksha", "price" => 300, "image" => "images/content/rudra.jpg"],
+							["name" => "Flowers", "price" => 300, "image" => "images/content/lotus.avif"],
+							["name" => "Gemstones", "price" => 300, "image" => "images/content/gem.avif"],
+							["name" => "Jadi-buti", "price" => 300, "image" => "images/content/herb.jpg"],
+							["name" => "Gift items", "price" => 300, "image" => "images/content/gift.jpg"],
+							["name" => "Yantra", "price" => 300, "image" => "images/content/yantra.jpg"],
+							["name" => "Fruits", "price" => 300, "image" => "images/content/fruits.jpg"],
+							["name" => "Sweets", "price" => 300, "image" => "images/content/laddu.jpg"],
+						];
+
+						foreach ($products as $product):
+						?>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+							<div class="ast_product_section">
+								<div class="ast_product_image">
+									<a href="shop_single.php"><img src="<?= $product['image'] ?>" class="img-responsive"></a>
 								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/rudra.jpg"
-												class="img-responsive"></a>
+								<div class="ast_product_info">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+									<i class="fa fa-star-o"></i>
+									<h4 class="ast_shop_title"><a href="shop_single.php"><?= $product['name'] ?></a></h4>
+									<p>₹<?= $product['price'] ?>.00</p>
+									<div class="ast_info_bottom">
+										<form method="post" action="cart.php">
+											<input type="hidden" name="product_name" value="<?= $product['name'] ?>">
+											<input type="hidden" name="product_price" value="<?= $product['price'] ?>">
+											<input type="hidden" name="product_image" value="<?= $product['image'] ?>">
+											<button type="submit" name="add_to_cart" class="ast_add_cart ast_btn">add to cart</button>
+										</form>
 									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">Rudraksha</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/lotus.avif"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">Flowers</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/gem.avif"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">gemstones</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/herb.jpg"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">jadi-buti</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/gift.jpg"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">gift items</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/yantra.jpg"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">Yantra</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/fruits.jpg"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">gemstones</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-								<div class="ast_product_section">
-									<div class="ast_product_image">
-										<a href="shop_single.php"><img src="images/content/laddu.jpg"
-												class="img-responsive"></a>
-									</div>
-									<div class="ast_product_info">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-										<h4 class="ast_shop_title"><a href="shop_single.php">Sweets</a></h4>
-										<p>$30.00</p>
-										<div class="ast_info_bottom">
-											<a href="cart.php" class="ast_add_cart ast_btn">add to cart</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-								<div class="ast_pagination">
-									<ul class="pagination">
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a class="active" href="#">Next</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 col-12">
-					<div class="ast_shop_sidebar sidebar_wrapper">
-						<!-- <aside class="widget widget_search">
-						<input type="text" placeholder="Search...">
-						<button type="button"><i class="fa fa-search"></i></button>
-					</aside> -->
-						<aside class="widget widget_filter">
-							<h4 class="widget-title">filter by price</h4>
-							<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+						<?php endforeach; ?>
 
-							<div class="filter_input">
-								<input type="text" min=0 max="9900" oninput="validity.valid||(value='0');"
-									id="min_price" class="price-range-field" />
-								<input type="text" min=0 max="10000" oninput="validity.valid||(value='10000');"
-									id="max_price" class="price-range-field" />
+						<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="ast_pagination">
+								<ul class="pagination">
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a class="active" href="#">Next</a></li>
+								</ul>
 							</div>
-							<button class="price-range-search ast_btn" id="price-range-submit">Search</button>
-						</aside>
-						<aside class="widget widget_categories">
-							<h4 class="widget-title">Categories</h4>
-							<ul>
-								<li><a href="#">yantra</a></li>
-								<li><a href="#">navgraha yantra</a></li>
-								<li><a href="#">books</a></li>
-								<li><a href="#">gemstone</a></li>
-								<li><a href="#">ring</a></li>
-								<li><a href="#">feng shui</a></li>
-								<li><a href="#">lucky stones</a></li>
-							</ul>
-						</aside>
-						<aside class="widget widget_latest_product">
-							<h4 class="widget-title">new products</h4>
-							<ul>
-								<li><a href="#">gemstone</a></li>
-								<li><a href="#">navgraha yantra</a></li>
-								<li><a href="#">rings</a></li>
-								<li><a href="#">yantra</a></li>
-								<li><a href="#">books</a></li>
-							</ul>
-						</aside>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+						</div>
+
+					</div> <!-- row -->
+				</div> <!-- ast_shop_main -->
+			</div> <!-- col -->
+		</div> <!-- row -->
+	</div> <!-- container -->
+</div> <!-- wrapper -->
+
+</body>
+</html>
 	<!-- shop section end -->
 
 

@@ -153,91 +153,121 @@ session_start();
 </div>
 <!--Breadcrumb end--> 
 
+<?php
+
+
+// Handle add to cart
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
+    $product = [
+        'name' => $_POST['product_name'],
+        'price' => $_POST['product_price'],
+        'image' => $_POST['product_image'],
+        'quantity' => 1
+    ];
+
+    $added = false;
+    if (isset($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $key => $item) {
+            if ($item['name'] === $product['name']) {
+                $_SESSION['cart'][$key]['quantity']++;
+                $added = true;
+                break;
+            }
+        }
+    }
+
+    if (!$added) {
+        $_SESSION['cart'][] = $product;
+    }
+
+   
+    
+}
+
+// Handle remove
+if (isset($_GET['remove'])) {
+    $remove_index = $_GET['remove'];
+    unset($_SESSION['cart'][$remove_index]);
+    $_SESSION['cart'] = array_values($_SESSION['cart']); // Reindex array
+    header('Location: cart.php');
+    exit;
+}
+
+// Calculate total
+$total = 0;
+?>
+
 <!-- Cart section Start -->
 <div class="ast_cart_wrapper ast_toppadder70 ast_bottompadder70">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-12">
-				<div class="table-responsive cart_table">
-					<table class="table">
-						<tr>
-							<th>Products</th>
-							<th>Price</th>
-							<th>Quantity</th>
-							<th>Total</th>
-							<th>Action</th>
-						</tr>
-						<tr>
-							<td>
-								<span class="prod_thumb">
-									<img src="https://dummyimage.com/59x59" alt="" class="img-responsive" />
-								</span>
-								<div class="product_details">
-									<h4><a href="#">Rudraksha</a></h4>
-								</div>
-							</td>
-							<td>$300</td>
-							<td><input type="number" name="pro_quantity" class="pro_quantity" value="1"></td>
-							<td>$300</td>
-							<td>
-								<span class="close_pro"><i class="fa fa-trash"></i></span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span class="prod_thumb">
-									<img src="https://dummyimage.com/59x59" alt="" class="img-responsive" />
-								</span>
-								<div class="product_details">
-									<h4><a href="#">Rudraksha</a></h4>
-								</div>
-							</td>
-							<td>$299</td>
-							<td><input type="number" name="pro_quantity" class="pro_quantity" value="2"></td>
-							<td>$299</td>
-							<td>
-								<span class="close_pro"><i class="fa fa-trash"></i></span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span class="prod_thumb">
-									<img src="https://dummyimage.com/59x59" alt="" class="img-responsive" />
-								</span>
-								<div class="product_details">
-									<h4><a href="#">Rudraksha</a></h4>
-								</div>
-							</td>
-							<td>$300</td>
-							<td><input type="number" name="pro_quantity" class="pro_quantity" value="3"></td>
-							<td>$300</td>
-							<td>
-								<span class="close_pro"><i class="fa fa-trash"></i></span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="cupon_code_wrap">
-									<input type="text" name="cupon_code" placeholder="####" class="cupon_code">
-									<button type="submit" class="cupon_btn ast_btn" value="Apply Cupon Code">Apply Coupon Code</button>
-								</div>
-							</td>
-							<td>&nbsp;</td>
-							<td>Total</td>
-							<td>$899</td>
-							<td>&nbsp;</td>
-						</tr>
-					</table>
-					<a href="checkout.php" class="proceed_btn ast_btn" value="Apply Cupon Code">checkout</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="table-responsive cart_table">
+                    <table class="table">
+                        <tr>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <?php if (!empty($_SESSION['cart'])): ?>
+                            <?php foreach ($_SESSION['cart'] as $index => $item): 
+                                $subtotal = $item['price'] * $item['quantity'];
+                                $total += $subtotal;
+                            ?>
+                                <tr>
+                                    <td>
+                                        <span class="prod_thumb">
+                                            <img src="<?= htmlspecialchars($item['image']) ?>" alt="" class="img-responsive" width="59" height="59" />
+                                        </span>
+                                        <div class="product_details">
+                                            <h4><a href="#"><?= htmlspecialchars($item['name']) ?></a></h4>
+                                        </div>
+                                    </td>
+                                    <td>₹<?= $item['price'] ?></td>
+                                    <td>
+                                        <input type="number" name="pro_quantity" class="pro_quantity" value="<?= $item['quantity'] ?>" readonly>
+                                    </td>
+                                    <td>₹<?= $subtotal ?></td>
+                                    <td>
+                                        <a href="cart.php?remove=<?= $index ?>">
+                                            <span class="close_pro"><i class="fa fa-trash"></i></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+
+                            <tr>
+                                <td>
+                                    <div class="cupon_code_wrap">
+                                        <input type="text" name="cupon_code" placeholder="####" class="cupon_code">
+                                        <button type="submit" class="cupon_btn ast_btn">Apply Coupon Code</button>
+                                    </div>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>Total</td>
+                                <td>₹<?= $total ?></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="5" style="text-align:center;">Your cart is empty.</td>
+                            </tr>
+                        <?php endif; ?>
+                    </table>
+
+                    <?php if (!empty($_SESSION['cart'])): ?>
+                        <a href="checkout.php" class="proceed_btn ast_btn">checkout</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <!-- cart section end --> 
-
-
-
 <!-- Footer wrapper start-->
 <div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
 		<div class="container">
